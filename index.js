@@ -8,18 +8,17 @@ function updateEmployeeWithKeyAndValue(employee, key, value){
 }
 
 function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
-    employee [key] = value
-    return employee
+     employee[key] = value
+     return employee
 }
 
-function deleteFromEmployeeByKey(employee, key){
+function  deleteFromEmployeeByKey(employee, key){
     const newObj = {...employee}
     delete newObj[key]
     return newObj
 }
 
-function destructivelyDeleteFromEmployeeByKey(employee, key){
+function  destructivelyDeleteFromEmployeeByKey(employee, key){
     delete employee[key]
     return employee
-    
 }
